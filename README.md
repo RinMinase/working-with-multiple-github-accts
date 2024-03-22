@@ -66,24 +66,24 @@ The **~/.ssh/config** file allows us specify many config options for SSH.
 If **config** file not already exists then create one (make sure you are in **~/.ssh** directory)
 
 ```sh
-     touch config
+touch config
 ```
 
 Open the config file created with the editor of your choice.
 
 Now we need to add these lines to the file, each block corresponding to each account we created earlier.
 ```config
-  # work account
-  Host github.com-kris-work
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/kris-work
+# work account
+Host github.com-kris-work
+HostName github.com
+User git
+IdentityFile ~/.ssh/kris-work
 
-  # personal account
-  Host github.com-kris-personal
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/kris-personal
+# personal account
+Host github.com-kris-personal
+HostName github.com
+User git
+IdentityFile ~/.ssh/kris-personal
 ```
 
 ## Step 4
@@ -92,9 +92,9 @@ Listed below are the other steps or commands that you may find helpful
 
 ### Cloning GitHub repositories using different accounts
 ```git
-  git clone git@github.com-{your-username}:{your-username}/{the-repo-name}.git
+git clone git@github.com-{your-username}:{your-username}/{the-repo-name}.git
 
-  [e.g.] git clone git@github.com-kris-personal:kris-personal/TestRepo.git
+[e.g.] git clone git@github.com-kris-personal:kris-personal/TestRepo.git
 ```
 
 ### User and email configuration per project folder
